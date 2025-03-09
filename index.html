@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Futuristic Portfolio with Animations and Dynamic Elements -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Safuvan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#hero">MS</a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <div class="theme-toggle-icon">🌓</div>
+        <div class="theme-toggle-ring"></div>
+    </button>
+    <div class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="profile.jpg" alt="Muhammed Safuvan" class="hero-image" id="heroImage">
+                <div class="profile-ring"></div>
+            </div>
+            <h1 class="title glitch-text" data-text="Muhammed Safuvan">Muhammed Safuvan</h1>
+            <p class="subtitle">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </p>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="about">
+            <h2 style="opacity: 0; animation: fadeIn 0.8s ease forwards 1.3s">About Me</h2>
+            <p style="opacity: 0; animation: fadeIn 0.8s ease forwards 1.6s">I am a passionate web developer focused on creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+        </section>
+        <section class="projects">
+            <div class="project-card" onclick="expandCard(this)">
+                <h3>E-Commerce Platform</h3>
+                <p>A full-stack e-commerce solution with real-time inventory management</p>
+                <div class="tech-stack">
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React logo" width="20" height="20"> React</span>
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js logo" width="20" height="20"> Node.js</span>
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB logo" width="20" height="20"> MongoDB</span>
+                </div>
+            </div>
+            <div class="project-card" onclick="expandCard(this)">
+                <h3>Social Media Dashboard</h3>
+                <p>Analytics and management platform for social media accounts</p>
+                <div class="tech-stack">
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue.js logo" width="20" height="20"> Vue.js</span>
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt="Firebase logo" width="20" height="20"> Firebase</span>
+                </div>
+            </div>
+            <div class="project-card" onclick="expandCard(this)">
+                <h3>AI Chat Application</h3>
+                <p>Real-time chat application with AI-powered responses</p>
+                <div class="tech-stack">
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python logo" width="20" height="20"> Python</span>
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" alt="TensorFlow logo" width="20" height="20"> TensorFlow</span>
+                    <span><img src="https://cdn.worldvectorlogo.com/logos/websocket.svg" alt="WebSocket logo" width="20" height="20"> WebSocket</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <span class="skill-item" data-progress="90">
+                    <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5 logo" width="24" height="24">
+                    <span>HTML5</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="85">
+                    <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3 logo" width="24" height="24">
+                    <span>CSS3</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="80">
+                    <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript logo" width="24" height="24">
+                    <span>JavaScript</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="75">
+                    <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React logo" width="24" height="24">
+                    <span>React</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="70">
+                    <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js logo" width="24" height="24">
+                    <span>Node.js</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="85">
+                    <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python logo" width="24" height="24">
+                    <span>Python</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="65">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB logo" width="24" height="24">
+                    <span>MongoDB</span>
+                    <div class="skill-progress"></div>
+                </span>
+                <span class="skill-item" data-progress="70">
+                    <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS logo" width="24" height="24">
+                    <span>AWS</span>
+                    <div class="skill-progress"></div>
+                </span>
+            </div>
+            <div class="resume-section">
+                <button class="resume-btn" onclick="window.open('resume.pdf', '_blank')">
+                    <img src="https://cdn.worldvectorlogo.com/logos/document.svg" alt="Resume" width="20" height="20">
+                    <span>View Resume</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="terminal-text" id="terminal">
+            <span class="prompt">$</span>
+            <span class="command"></span>
+        </div>
+        <p class="copyright">
+            <span class="copyright-symbol">&copy;</span>
+            <span class="copyright-year">2025</span>
+            <span class="copyright-divider">|</span>
+            <span class="copyright-name">Muhammed Safuvan</span>
+            <span class="copyright-text">All rights reserved</span>
+        </p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-icon">
+                <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn" width="30" height="30">
+            </a>
+            <a href="https://github.com/your-username" target="_blank" class="social-icon">
+                <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub" width="30" height="30">
+            </a>
+            <a href="https://instagram.com/your-profile" target="_blank" class="social-icon">
+                <img src="https://cdn.worldvectorlogo.com/logos/instagram-2016-5.svg" alt="Instagram" width="30" height="30">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
